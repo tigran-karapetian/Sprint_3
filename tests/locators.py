@@ -3,46 +3,46 @@ from selenium.webdriver.common.by import By
 
 class TestLocators:
     # Кнопка Личный кабинет
-    Personal_Area = By.XPATH, "//html/body/div[1]/div/header/nav/a"
+    personal_area = By.XPATH, "//html/body/div[1]/div/header/nav/a"
     # Кнопка Зарегистрироваться на главной странице
-    Registration_Button_Main_Page = By.CLASS_NAME, "Auth_link__1fOlj"
+    registration_button_main_page = By.CLASS_NAME, "Auth_link__1fOlj"
     # Поле Имя на форме регистрации
-    Name = By.XPATH, "//html/body/div[1]/div/main/div/form/fieldset[1]/div/div/input"
+    name = By.XPATH, "//html/body/div[1]/div/main/div/form/fieldset[1]/div/div/input"
     # Поле Email на форме регистрации
-    Email = By.XPATH, "//html/body/div[1]/div/main/div/form/fieldset[2]/div/div/input"
+    email = By.XPATH, "//html/body/div[1]/div/main/div/form/fieldset[2]/div/div/input"
     # Поле Пароль на форме регистрации
-    Password = By.XPATH, "//html/body/div[1]/div/main/div/form/fieldset[3]/div/div/input"
+    password = By.XPATH, "//html/body/div[1]/div/main/div/form/fieldset[3]/div/div/input"
     # Кнопка Зарегистрироваться на форме регистрации
-    Registration_Register_Button = By.XPATH, "//html/body/div[1]/div/main/div/form/button"
+    registration_register_button = By.XPATH, "//html/body/div[1]/div/main/div/form/button"
     # Кнопка Войти в аккаунт на главной странице
-    Enter_Button_Main_Page = By.XPATH, "/html/body/div[1]/div/main/section[2]/div/button"
+    enter_button_main_page = By.XPATH, "/html/body/div[1]/div/main/section[2]/div/button"
     #Поле Email на странице входа
-    Email_Login_Page = By.XPATH, "//html/body/div[1]/div/main/div/form/fieldset[1]/div/div/input"
+    email_login_page = By.XPATH, "//html/body/div[1]/div/main/div/form/fieldset[1]/div/div/input"
     #Поле Пароль на странице входа
-    Password_Login_Page = By.XPATH, "//html/body/div[1]/div/main/div/form/fieldset[2]/div/div/input"
+    password_login_page = By.XPATH, "//html/body/div[1]/div/main/div/form/fieldset[2]/div/div/input"
     #Кнопка Войти на странице входа
-    Enter_Button_Login_Page = By.XPATH, "/html/body/div[1]/div/main/div/form/button"
+    enter_button_login_page = By.XPATH, "/html/body/div[1]/div/main/div/form/button"
     #Кнопка оформить заказ
-    Checkout_Button = By.XPATH, ".//button[text()='Оформить заказ']"
+    checkout_button = By.XPATH, ".//button[text()='Оформить заказ']"
     #Кнопка восстановить пароль
-    Recovery_Password_Button = By.XPATH, "/html/body/div[1]/div/main/div/div/p[2]/a"
+    recovery_password_button = By.XPATH, "/html/body/div[1]/div/main/div/div/p[2]/a"
     #Email на  форме восстановления пароля
-    Email_For_Password_Recovery = By.XPATH, "/html/body/div[1]/div/main/div/form/fieldset/div/div/input"
+    email_for_password_recovery = By.XPATH, "/html/body/div[1]/div/main/div/form/fieldset/div/div/input"
     #Кнопка восстановить
-    Recovery_Button = "/html/body/div[1]/div/main/div/form/button"
+    recovery_button = "/html/body/div[1]/div/main/div/form/button"
     #Кнопка Войти на форме восттановления пароля
-    Enter_Button_Recovery_Page = By.XPATH, "/html/body/div[1]/div/main/div/div/p/a"
+    enter_button_recovery_page = By.XPATH, "/html/body/div[1]/div/main/div/div/p/a"
     #Кнопка Конструктор в личном кабинете
-    Constructor_Button = By.XPATH, "/html/body/div[1]/div/header/nav/ul/li[1]/a"
+    constructor_button = By.XPATH, "/html/body/div[1]/div/header/nav/ul/li[1]/a"
     #Логотип Stellar Burgers в личном кабинете
-    Stellar_Burgers_Logo = By.XPATH, "/html/body/div[1]/div/header/nav/div/a"
+    stellar_burgers_logo = By.XPATH, "/html/body/div[1]/div/header/nav/div/a"
     #Кнопка выход в личном кабинете
-    Logout_Button_Personal_Account_Page = By.XPATH, "/html/body/div[1]/div/main/div/nav/ul/li[3]/button"
+    logout_button_personal_account_Page = By.XPATH, "/html/body/div[1]/div/main/div/nav/ul/li[3]/button"
     #Кнопка Булки
-    Buns_Button = By.XPATH, "/html/body/div[1]/div/main/section[1]/div[1]/div[1]"
+    buns_button = By.XPATH, "/html/body/div[1]/div/main/section[1]/div[1]/div[1]"
     #Кнопка Соусы
-    Sauces_Button = By.XPATH, "/html/body/div[1]/div/main/section[1]/div[1]/div[2]"
+    sauces_button = By.XPATH, "/html/body/div[1]/div/main/section[1]/div[1]/div[2]"
     #Кнопка Начинки
-    Toppings_Button = By.XPATH, "/html/body/div[1]/div/main/section[1]/div[1]/div[3]"
+    toppings_button = By.XPATH, "/html/body/div[1]/div/main/section[1]/div[1]/div[3]"
 
 
