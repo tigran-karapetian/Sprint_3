@@ -2,7 +2,7 @@ from selenium.webdriver.common.by import By
 from locators import TestLocators
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions
-import time
+
 
 #тест выход по кнопке «Выйти» в личном кабинете
 def test_logout_button_in_personal_account(driver):
@@ -13,8 +13,8 @@ def test_logout_button_in_personal_account(driver):
     WebDriverWait(driver, 3).until(expected_conditions.visibility_of_element_located(
         (By.XPATH, ".//button[text()='Оформить заказ']")))
     driver.find_element(*TestLocators.Personal_Area).click()
-    time.sleep(1)
+    driver.implicitly_wait(3)
     driver.find_element(*TestLocators.Logout_Button_Personal_Account_Page).click()
-    time.sleep(1)
+    WebDriverWait(driver, 3).until(expected_conditions.url_contains('login'))
     assert driver.current_url == 'https://stellarburgers.nomoreparties.site/login'
 
